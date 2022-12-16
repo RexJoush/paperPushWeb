@@ -9,7 +9,7 @@
         <img style="position: relative; top: 0; width: 200px; height: 200px;" src="@/assets/nwu2.png" alt="西北大学">
       </el-main>
       <el-footer style="font-size: 16px">
-        <b>版本 v1.1.0</b><br>
+        <b>版本 v1.1.1</b><br>
         <b>© 2020 - <span>{{ year }}</span> | 最终解释权归 Rex Joush 所有 </b><br>
       </el-footer>
     </el-container>

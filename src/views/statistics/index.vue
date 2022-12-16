@@ -36,13 +36,13 @@
       <el-row>
         <el-col :span="13">
           <div>
-            <el-progress :text-inside="true" color="#3E6D9C" :stroke-width="26" text-color="#FD841F" :percentage="percentage"></el-progress>
+            <el-progress :text-inside="true" color="#3E6D9C" :stroke-width="26" text-color="#e6a23c" :percentage="percentage"></el-progress>
           </div>
         </el-col>
         <el-col :span="3">
           <el-statistic style="color: #FD841F">
             <template slot="title">
-              {{ now }} / {{ target }}
+              <el-tag size="small">{{ now }} / {{ target }}</el-tag>
             </template>
           </el-statistic>
         </el-col>

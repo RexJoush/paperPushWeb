@@ -33,7 +33,7 @@
       <br>
       <el-pagination
         background
-        layout="prev, pager, next"
+        layout="total, prev, pager, next"
         :total="total"
         @current-change="onChangePage">
       </el-pagination>
@@ -91,7 +91,6 @@ export default {
   },
   created() {
     listRecord(1, 10).then(res => {
-      console.log(res)
       this.total = res.data.total
       this.data = res.data.records
     })
@@ -158,7 +157,7 @@ export default {
     },
     // 分页
     onChangePage(page) {
-      listRecord(1, 10).then(res => {
+      listRecord(page, 10).then(res => {
         this.total = res.data.total
         this.data = res.data.records
       })
